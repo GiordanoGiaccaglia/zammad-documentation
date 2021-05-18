@@ -196,7 +196,7 @@ older versions. A list of required versions can be found on the
          .. code-block:: sh
 
             $ su - zammad
-            $ bundle install --without test development mysql
+            $ bundle config --local without "development test"
 
    .. tab:: MySQL / MariaDB
 
@@ -226,7 +226,7 @@ older versions. A list of required versions can be found on the
          .. code-block:: sh
 
             $ su - zammad
-            $ bundle install --without test development postgres
+            $ bundle config --local without "development test"
 
 Step 3: Configure database settings
 -----------------------------------
